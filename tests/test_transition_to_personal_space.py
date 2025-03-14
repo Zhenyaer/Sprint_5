@@ -23,4 +23,4 @@ class TestPersonalSpace:
         WebDriverWait(driver, Config.timeout).until(expected_conditions.element_to_be_clickable
                                                     (Locators.logout_button))
 
-        assert driver.current_url == 'https://stellarburgers.nomoreparties.site/account/profile'
+        assert driver.current_url == f'{Config.URL}account/profile'

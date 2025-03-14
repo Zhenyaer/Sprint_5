@@ -20,7 +20,7 @@ class TestRegistration:
         WebDriverWait(driver, Config.timeout).until(expected_conditions.element_to_be_clickable
                                                      (Locators.login_button_1))
 
-        assert driver.current_url == 'https://stellarburgers.nomoreparties.site/login'
+        assert driver.current_url == f'{Config.URL}login'
 
     def test_registration_incorrect_password(self, driver):
 

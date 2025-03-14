@@ -27,7 +27,7 @@ class TestConstructor:
         WebDriverWait(driver, Config.timeout).until(expected_conditions.element_to_be_clickable
                                                     (Locators.chapter_sauces))
 
-        assert driver.current_url == 'https://stellarburgers.nomoreparties.site/'
+        assert driver.current_url == f'{Config.URL}'
 
     def test_transition_to_constructor_page_logo(self, driver):
 
@@ -50,4 +50,4 @@ class TestConstructor:
         WebDriverWait(driver, Config.timeout).until(expected_conditions.element_to_be_clickable
                                                     (Locators.chapter_sauces))
 
-        assert driver.current_url == 'https://stellarburgers.nomoreparties.site/'
+        assert driver.current_url == f'{Config.URL}'

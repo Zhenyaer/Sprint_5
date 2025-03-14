@@ -19,7 +19,7 @@ class TestLogin:
         WebDriverWait(driver, Config.timeout).until(expected_conditions.element_to_be_clickable
                                                      (Locators.chapter_sauces))
 
-        assert driver.current_url == 'https://stellarburgers.nomoreparties.site/'
+        assert driver.current_url == f'{Config.URL}'
 
     def test_login_personal_space(self, driver):
 
@@ -33,7 +33,7 @@ class TestLogin:
         WebDriverWait(driver, Config.timeout).until(expected_conditions.element_to_be_clickable
                                                      (Locators.chapter_sauces))
 
-        assert driver.current_url == 'https://stellarburgers.nomoreparties.site/'
+        assert driver.current_url == f'{Config.URL}'
 
     def test_login_registration_form(self, driver):
 
@@ -47,7 +47,7 @@ class TestLogin:
         WebDriverWait(driver, Config.timeout).until(expected_conditions.element_to_be_clickable
                                                      (Locators.chapter_sauces))
 
-        assert driver.current_url == 'https://stellarburgers.nomoreparties.site/'
+        assert driver.current_url == f'{Config.URL}'
 
     def test_login_password_recovery_form(self, driver):
 
@@ -61,4 +61,4 @@ class TestLogin:
         WebDriverWait(driver, Config.timeout).until(expected_conditions.element_to_be_clickable
                                                      (Locators.chapter_sauces))
 
-        assert driver.current_url == 'https://stellarburgers.nomoreparties.site/'
+        assert driver.current_url == f'{Config.URL}'
